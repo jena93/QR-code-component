@@ -92,5 +92,8 @@ div#footer {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (min-width: 375px) and (max-width: 1440px) {
+@media screen and (max-width: 375px) {
+    width: 375px;
+    height: 812px;
+    
   }
