@@ -1,5 +1,25 @@
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -10,6 +30,9 @@ width: 1440px;
   align-content: center;
   overflow: scroll;  
   background-color: hsl(212, 45%, 89%);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 [class*="col-"] {
@@ -43,9 +66,9 @@ width: 1440px;
     margin-left: 21.5px;
 }
 
-.qr img {
+img {
     max-width: 100%;
-    max-height: 100%;
+    display: block;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -55,7 +78,7 @@ p {
     font-size: 15px;
 }
 
-p.improv {
+.improv {
     text-align: center;
     color: hsl(218, 44%, 22%); 
     font-weight: 700;
@@ -74,7 +97,7 @@ p.scan {
     font-size: 25px;
 }
 
-div#footer {
+footer {
     position:fixed;
     bottom:0;
     left: 0;
