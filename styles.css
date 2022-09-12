@@ -44,7 +44,7 @@ width: 1440px;
   .col-3 {width: 75%;}
   .col-4 {width: 100%;}
 
-.container {
+main.container {
     border-radius: 20px;
     display: block;
     background-color: hsl(0, 0%, 100%);
@@ -54,7 +54,7 @@ width: 1440px;
     align-items: center;
     margin: auto;
 }
-.qr {
+div.qr {
     border-radius: 20px;
     display: block;
     background-color: hsl(212, 45%, 89%);
